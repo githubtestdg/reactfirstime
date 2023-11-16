@@ -14,6 +14,11 @@ function reducer(state,action){
                action.todo
             ]
         }
+    }else if (action.type === 'set_search'){
+        return{
+            ...state,
+            search: action.value
+        }
     }
 }
 
